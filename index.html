@@ -3,174 +3,147 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Migue — Desarrollo web & sistemas</title>
-<meta name="description" content="Diseño y construyo sistemas web, dashboards y herramientas internas. Full-stack: Python, FastAPI, React, Node y PostgreSQL." />
+<title>Migue — Full-stack Developer</title>
+<meta name="description" content="Desarrollador full-stack. Construyo productos web de punta a punta: frontend, backend, base de datos y deploy." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
 <header id="top">
-  <nav class="nav">
-    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>MIGUE<span style="color:var(--signal)">.</span>dev</a>
+  <nav class="nav wrap">
+    <a class="logo" href="#top">M<span>_</span></a>
     <div class="nav-links">
-      <a href="#proyectos">// proyectos</a>
-      <a href="#capacidades">// capacidades</a>
-      <a href="#contacto">// contacto</a>
+      <a href="#proyectos">proyectos</a>
+      <a href="#sobre-mi">sobre mí</a>
+      <a href="#contacto">contacto</a>
     </div>
-    <a class="nav-cta" href="#contacto">Trabajemos →</a>
+    <a class="btn btn-sm" href="#contacto">Hablemos</a>
   </nav>
 </header>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="scan" aria-hidden="true"></div>
-  <div class="wrap">
-    <div class="hero-inner">
-      <p class="eyebrow reveal d1">Desarrollo web · Sistemas · Herramientas internas</p>
-      <h1 class="reveal d2">Diseño y construyo <span class="hl">sistemas web</span> que la gente usa todos los días.</h1>
-      <p class="lead reveal d3">Full-stack, de punta a punta: del backend y la base de datos hasta la interfaz, el despliegue y el servidor. Dashboards, herramientas internas y aplicaciones pensadas para resolver un problema concreto.</p>
-
-      <dl class="spec reveal d4">
-        <div><dt>Rol</dt><dd>Full-stack developer</dd></div>
-        <div><dt>Base</dt><dd>Caleta Olivia, Patagonia · AR</dd></div>
-        <div><dt>Stack</dt><dd>Python · FastAPI · React · Node · PostgreSQL</dd></div>
-        <div><dt>Foco</dt><dd>Dashboards & tooling interno</dd></div>
-      </dl>
-
-      <a href="#proyectos" class="scroll-hint reveal d4"><span aria-hidden="true"></span>DESPLAZÁ PARA VER EL TRABAJO</a>
-    </div>
+<!-- ===== HERO ===== -->
+<section class="hero wrap">
+  <span class="badge badge-live reveal"><i></i> Disponible para proyectos</span>
+  <h1 class="reveal">
+    Desarrollador full-stack que construye
+    <span class="mark">productos web</span>
+    de punta a punta.
+  </h1>
+  <p class="hero-sub reveal">
+    Frontend, backend, base de datos y deploy. Escribo el código, lo pongo en producción
+    y me aseguro de que no se caiga a las 3 de la mañana.
+  </p>
+  <div class="hero-cta reveal">
+    <a class="btn btn-primary" href="#proyectos">Ver proyectos →</a>
+    <a class="btn" href="https://github.com/miguepmk" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
 </section>
 
-<!-- ============ PROYECTOS ============ -->
-<section id="proyectos">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">// 01 — Registro de proyectos</p>
-      <h2>Cosas que construí y están funcionando.</h2>
-      <p>Una selección de sistemas y herramientas en producción. Cada uno resolvió una necesidad real.</p>
-    </div>
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>React</span><span>✦</span><span>TypeScript</span><span>✦</span><span>Node.js</span><span>✦</span><span>FastAPI</span><span>✦</span><span>PostgreSQL</span><span>✦</span><span>Python</span><span>✦</span><span>Vite</span><span>✦</span><span>Firebase</span><span>✦</span><span>Nginx</span><span>✦</span><span>Git</span><span>✦</span>
+    <span>React</span><span>✦</span><span>TypeScript</span><span>✦</span><span>Node.js</span><span>✦</span><span>FastAPI</span><span>✦</span><span>PostgreSQL</span><span>✦</span><span>Python</span><span>✦</span><span>Vite</span><span>✦</span><span>Firebase</span><span>✦</span><span>Nginx</span><span>✦</span><span>Git</span><span>✦</span>
+  </div>
+</div>
 
-    <div class="grid">
+<!-- ===== PROYECTOS ===== -->
+<section id="proyectos" class="wrap section">
+  <div class="section-head">
+    <span class="kicker">// proyectos seleccionados</span>
+    <h2>Cosas que construí y están funcionando</h2>
+  </div>
 
-      <!-- PMK-001 -->
-      <article class="card">
-        <div class="card-top">
-          <span class="card-id">PMK-001</span>
-          <span class="status"><i></i>Live</span>
-        </div>
-        <h3>Cerro Dragón Tracker</h3>
-        <p>Dashboard de seguimiento de un proyecto de IT en 9 fases. Importación/exportación CSV, filtrado por estado, persistencia de la interfaz y autenticación por email. Pensado para que el equipo vea el avance en tiempo real.</p>
-        <div class="tags">
-          <span class="tag">Firebase</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">Auth</span><span class="tag">CSV I/O</span>
-        </div>
-        <div class="card-links">
-          <a href="https://miguepmk.github.io/cerro-dragon-tracker" target="_blank" rel="noopener">Ver demo <span class="arrow">↗</span></a>
-          <a href="https://github.com/miguepmk" target="_blank" rel="noopener">Código <span class="arrow">↗</span></a>
-        </div>
-      </article>
+  <div class="projects">
 
-      <!-- PMK-002 -->
-      <article class="card">
-        <div class="card-top">
-          <span class="card-id">PMK-002</span>
-          <span class="status internal"><i></i>Interno</span>
-        </div>
-        <h3>PDF Merger</h3>
-        <p>Herramienta web interna para fusionar PDFs con acceso a archivos por usuario vía SMB. Backend en FastAPI + Python, frontend liviano en HTML/JS/CSS, corriendo en un contenedor Debian sobre Proxmox contra el NAS de la empresa.</p>
-        <div class="tags">
-          <span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">pysmb</span><span class="tag">Proxmox/LXC</span><span class="tag">Debian</span>
-        </div>
-        <div class="card-links">
-          <a class="disabled" title="Herramienta interna">Uso interno</a>
-          <a href="https://github.com/miguepmk" target="_blank" rel="noopener">Código <span class="arrow">↗</span></a>
-        </div>
-      </article>
+    <article class="project p-blue reveal">
+      <div class="p-top"><span class="p-num">01</span><span class="p-status">● Live</span></div>
+      <h3>Project Tracker</h3>
+      <p>Dashboard para seguir un proyecto en 9 fases: importación/exportación CSV, filtros por estado, estado de la interfaz persistente y login con email. Todo en tiempo real.</p>
+      <ul class="chips"><li>Firebase</li><li>JavaScript</li><li>Auth</li><li>CSV I/O</li></ul>
+      <div class="p-links">
+        <a href="https://miguepmk.github.io/cerro-dragon-tracker" target="_blank" rel="noopener">Demo ↗</a>
+        <a href="https://github.com/miguepmk" target="_blank" rel="noopener">Código ↗</a>
+      </div>
+    </article>
 
-      <!-- PMK-003 -->
-      <article class="card">
-        <div class="card-top">
-          <span class="card-id">PMK-003</span>
-          <span class="status"><i></i>Deployado</span>
-        </div>
-        <h3>MortaGym</h3>
-        <p>Sistema de gestión de gimnasio full-stack: frontend en React + Vite, backend en Node.js y base de datos PostgreSQL con connection pooling. Deploy en Vercel y hardening completo del servidor (Nginx, SSL, UFW, Fail2Ban).</p>
-        <div class="tags">
-          <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Nginx</span><span class="tag">Vercel</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/miguepmk" target="_blank" rel="noopener">Código <span class="arrow">↗</span></a>
-        </div>
-      </article>
+    <article class="project p-pink reveal">
+      <div class="p-top"><span class="p-num">02</span><span class="p-status">● Self-hosted</span></div>
+      <h3>PDF Merger</h3>
+      <p>Herramienta web para fusionar PDFs con acceso a archivos por usuario vía SMB. API en FastAPI, frontend liviano en vanilla JS, corriendo en un contenedor Linux propio.</p>
+      <ul class="chips"><li>FastAPI</li><li>Python</li><li>pysmb</li><li>Docker/LXC</li></ul>
+      <div class="p-links">
+        <a href="https://github.com/miguepmk" target="_blank" rel="noopener">Código ↗</a>
+      </div>
+    </article>
 
-      <!-- ghost / cómo agregar más -->
-      <article class="card ghost">
-        <span class="card-id">PMK-004</span>
-        <h3 style="color:var(--muted)">Tu próximo proyecto</h3>
-        <p>Duplicá cualquier bloque <span class="mono" style="color:var(--signal)">&lt;article class="card"&gt;</span> en el HTML para sumar otro. Cambiá el ID, el estado, el texto y los tags. Así de simple.</p>
-      </article>
+    <article class="project p-yellow reveal">
+      <div class="p-top"><span class="p-num">03</span><span class="p-status">● Deployed</span></div>
+      <h3>MortaGym</h3>
+      <p>Sistema de gestión de gimnasio full-stack: React + Vite adelante, Node.js atrás y PostgreSQL con pooling. Deploy en Vercel y servidor endurecido de punta a punta.</p>
+      <ul class="chips"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Vercel</li></ul>
+      <div class="p-links">
+        <a href="https://github.com/miguepmk" target="_blank" rel="noopener">Código ↗</a>
+      </div>
+    </article>
 
-    </div>
+    <article class="project p-add reveal">
+      <span class="p-num">04</span>
+      <h3>El próximo va acá</h3>
+      <p>Duplicá un bloque <code>&lt;article class="project"&gt;</code> y cambiá la clase de color (<code>p-blue</code>, <code>p-pink</code>, <code>p-yellow</code>, <code>p-lime</code>).</p>
+    </article>
+
   </div>
 </section>
 
-<!-- ============ CAPACIDADES ============ -->
-<section id="capacidades">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">// 02 — Capacidades</p>
-      <h2>Qué puedo hacer por tu proyecto.</h2>
-      <p>De la idea al servidor en producción, sin tercerizar las partes incómodas.</p>
+<!-- ===== SOBRE MÍ ===== -->
+<section id="sobre-mi" class="wrap section">
+  <div class="about">
+    <div class="about-text">
+      <span class="kicker">// sobre mí</span>
+      <h2>Escribo código, lo despliego y no delego las partes incómodas.</h2>
+      <p>Me muevo cómodo en todo el stack: desde una interfaz que se entiende a la primera hasta la base de datos, el servidor y el certificado SSL. Me gusta construir herramientas que resuelven un problema concreto y dejarlas andando en producción.</p>
+      <div class="skills">
+        <div><h4>Frontend</h4><ul class="chips"><li>React</li><li>Vite</li><li>JS/TS</li><li>HTML/CSS</li></ul></div>
+        <div><h4>Backend</h4><ul class="chips"><li>FastAPI</li><li>Node.js</li><li>PostgreSQL</li><li>Firebase</li></ul></div>
+        <div><h4>Infra</h4><ul class="chips"><li>Linux</li><li>Nginx</li><li>SSL/UFW</li><li>Vercel</li></ul></div>
+      </div>
     </div>
 
-    <div class="caps">
-      <div class="cap">
-        <span class="n">A—01</span>
-        <h4>Frontend</h4>
-        <p>Interfaces claras y rápidas, responsivas y accesibles. Dashboards con datos reales, no maquetas.</p>
-        <ul><li>React</li><li>Vite</li><li>JS</li><li>HTML/CSS</li></ul>
-      </div>
-      <div class="cap">
-        <span class="n">B—02</span>
-        <h4>Backend & datos</h4>
-        <p>APIs, lógica de negocio y modelado de datos. Bases relacionales bien diseñadas y consultas que rinden.</p>
-        <ul><li>FastAPI</li><li>Node.js</li><li>PostgreSQL</li><li>Firebase</li></ul>
-      </div>
-      <div class="cap">
-        <span class="n">C—03</span>
-        <h4>Deploy & infra</h4>
-        <p>Del código al dominio: servidores, contenedores, SSL y endurecimiento. Que además de andar, ande seguro.</p>
-        <ul><li>Proxmox</li><li>Nginx</li><li>SSL/UFW</li><li>Vercel</li></ul>
+    <div class="terminal" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>bash — ~/migue</span></div>
+      <div class="term-body">
+        <p><span class="tp">$</span> whoami</p>
+        <p class="to">migue · full-stack developer</p>
+        <p><span class="tp">$</span> cat stack.txt</p>
+        <p class="to">react · node · python · postgres</p>
+        <p><span class="tp">$</span> uptime</p>
+        <p class="to">shipping since day one <span class="cursor">▋</span></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACTO ============ -->
-<section id="contacto">
-  <div class="wrap">
-    <div class="contact">
-      <p class="eyebrow" style="justify-content:center">// 03 — Contacto</p>
-      <h2>¿Tenés algo para construir?</h2>
-      <p>Escribime y lo vemos. Desde una herramienta interna hasta un sistema completo con su despliegue.</p>
-      <div class="btns">
-        <a class="btn primary" href="mailto:TU-EMAIL@ejemplo.com">✉ Escribime</a>
-        <a class="btn ghost" href="https://github.com/miguepmk" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn ghost" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </div>
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="wrap section">
+  <div class="contact">
+    <h2>¿Tenés algo para construir?</h2>
+    <p>Contame la idea y lo hacemos realidad. De una herramienta chica a un sistema completo con su deploy.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary btn-lg" href="mailto:TU-EMAIL@ejemplo.com">✉ Escribime</a>
+      <a class="btn btn-lg" href="https://github.com/miguepmk" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-lg" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="wrap foot">
-    <span class="mono">© <span id="year"></span> Migue — Caleta Olivia, AR</span>
-    <span class="mono">Construido a mano · HTML · CSS · JS</span>
-    <a href="#top">Volver arriba ↑</a>
-  </div>
+<footer class="wrap">
+  <span>© <span id="year"></span> Migue</span>
+  <span class="mono">hecho a mano · html · css · js</span>
+  <a href="#top">volver arriba ↑</a>
 </footer>
 
 <script src="js/script.js" defer></script>

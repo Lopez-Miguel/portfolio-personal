@@ -21,7 +21,7 @@ Abrí `index.html` y editá:
 
 - **Email:** buscá `TU-EMAIL@ejemplo.com` y ponelo real.
 - **LinkedIn:** buscá el botón `LinkedIn` y reemplazá el `href="#"` por tu URL.
-- **Proyectos:** cada tarjeta es un bloque `<article class="card">`. Para sumar uno, duplicá un bloque y cambiá ID, estado, texto, tags y links. La tarjeta punteada (`ghost`) es solo una guía: podés borrarla.
+- **Proyectos:** cada tarjeta es un bloque `<article class="project ...">`. Para sumar uno, duplicá un bloque y cambiá la clase de color (`p-blue`, `p-pink`, `p-yellow`, `p-lime`), el número, el estado, el texto, los chips y los links. La tarjeta punteada (`p-add`) es solo una guía: podés borrarla.
 - **Nombre / textos:** editá libremente los títulos y descripciones.
 
 > Nota: dejé los enlaces de "Código" apuntando a `github.com/miguepmk`. Cuando tengas los repos públicos de cada proyecto, cambiá cada `href` por el repo correspondiente.
